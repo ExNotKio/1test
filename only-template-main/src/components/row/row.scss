@@ -1,0 +1,44 @@
+.row {
+    $root: &;
+    margin: 60px;
+
+
+    &__container {
+        display:flex;
+
+        &-el{
+            width: 50%;
+          padding: 20px;
+          &--red {
+            background-color: $red;
+          }
+
+          &--green {
+            background-color: $green;
+          }
+
+          &--yellow {
+            background-color: $yellow;
+          }
+
+          &--none{
+            display:none;
+          }
+
+          // &:nth-child(1){
+          // background-color: $red;
+          // }
+          // &:nth-child(2){
+          // background-color: $yellow;
+          // }
+        }
+    }
+    &__footer{
+        display: flex;
+justify-content: center;
+        margin-top: 40px;
+        &-button{
+            margin: 0 auto;
+        }
+    }
+}
